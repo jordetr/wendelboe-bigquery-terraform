@@ -59,7 +59,13 @@
     "description": "Opphørsvedtakets virkningstidspunkt.",
     "mode": "NULLABLE"
   },
-    {
+  {
+    "name": "har_ikke_sammenhengende_vedtak",
+    "type": "STRING",
+    "description": "1 | 0",
+    "mode": "NULLABLE"
+  },
+  {
     "mode": "NULLABLE",
     "name": "kjoretidspunkt",
     "type": "DATETIME",
