@@ -1,0 +1,50 @@
+[
+  {
+    "name": "sak_id",
+    "type": "INTEGER",
+    "description": "ID for saken i Pesys.",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "totalt_antall_perioder",
+    "type": "INTEGER",
+    "description": "Totalt antall sammenhengende perioder med løpende vedtak på saken.",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "periode_nr",
+    "type": "INTEGER",
+    "description": "Nummer på perioden, sortert kronologisk fra 1.",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "er_siste_periode",
+    "type": "INTEGER",
+    "description": "Flagg (0/1) som angir om perioden er den siste perioden på saken.",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "forste_dato_lopende_fom",
+    "type": "DATETIME",
+    "description": "Første dato fra og med for løpende vedtak i perioden.",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "siste_dato_lopende_tom",
+    "type": "DATETIME",
+    "description": "Siste dato til og med for løpende vedtak i perioden. Null dersom perioden inneholder et vedtak uten sluttdato.",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "forste_dato_virk_fom",
+    "type": "DATETIME",
+    "description": "Første virkningsdato fra og med for vedtak i perioden.",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "kjoretidspunkt",
+    "type": "DATETIME",
+    "description": "Tidspunkt for kjøring av transformasjonen (UTC).",
+    "mode": "NULLABLE"
+  }
+]
